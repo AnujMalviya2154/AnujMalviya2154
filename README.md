@@ -41,9 +41,9 @@ On MockHire I chose raw WebRTC over a paid SDK, then spent a week fixing offer c
 
 ### Current focus
 
-**Building** — Production-grade full-stack applications with AI, real-time communication, and scalable architectures
-**Learning** — Cloud-native deployments, DevOps practices, scalable system design, and software architecture
-**Exploring** — Agentic AI systems, developer tooling, and building software that scales gracefully in production
+- **Building** — Production-grade full-stack applications with AI, real-time communication, and scalable architectures
+- **Learning** — Cloud-native deployments, DevOps practices, scalable system design, and software architecture
+- **Exploring** — Agentic AI systems, developer tooling, and building software that scales gracefully in production
 
 <br>
 
@@ -119,7 +119,7 @@ On MockHire I chose raw WebRTC over a paid SDK, then spent a week fixing offer c
 
 <div class="stats-row">
   <img src="https://github-readme-stats.anuraghazra1.vercel.app/api?username=AnujMalviya2154&show_icons=true&include_all_commits=true&count_private=true&rank_icon=percentile&hide_border=true&bg_color=00000000&title_color=E8A94E&icon_color=E8A94E&text_color=768390" alt="GitHub stats" height="165">
-  <img src="https://streak-stats.demolab.com?user=AnujMalviya2154&hide_border=true&background=00000000&ring=E8A94E&fire=E8A94E&currStreakLabel=E8A94E&sideLabels=768390&dates=768390&currStreakNum=768390&sideNums=768390&stroke=768390" alt="Contribution streak" height="165">
+  <img src="https://streak-stats.demolab.com?user=AnujMalviya2154&hide_border=true&theme=transparent&ring=E8A94E&fire=E8A94E&currStreakLabel=E8A94E&sideLabels=768390&dates=768390&currStreakNum=768390&sideNums=768390&stroke=768390" alt="Contribution streak" height="165">
 </div>
 
 <div style="text-align:center; margin: 16px 0;">
@@ -135,9 +135,9 @@ On MockHire I chose raw WebRTC over a paid SDK, then spent a week fixing offer c
 ### Contact
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/anujmalviya764/"><img src="https://img.shields.io/badge/LinkedIn-30363D?style=flat-square" alt="LinkedIn"></a>
+  <a href="https://www.linkedin.com/in/anujmalviya764/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/LinkedIn-30363D?style=flat-square" alt="LinkedIn"></a>
   &nbsp;
-  <a href="mailto:anujmalviya76434@gmail.com"><img src="https://img.shields.io/badge/Email-30363D?style=flat-square" alt="Email"></a>
+  <a href="mailto:anujmalviya76434@gmail.com" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Email-30363D?style=flat-square" alt="Email"></a>
 </p>
 
 <p align="center">

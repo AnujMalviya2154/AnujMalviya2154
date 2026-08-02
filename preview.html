@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>GitHub Profile README Preview</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  body {
+    background: #0d1117;
+    color: #e6edf3;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 32px;
+  }
+  h1, h2, h3, h4 { color: #e6edf3; border-bottom: 1px solid #30363d; padding-bottom: 0.3em; }
+  h3 { font-size: 1.25em; }
+  h4 { font-size: 1em; }
+  a { color: #58a6ff; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  hr { border: none; border-top: 1px solid #30363d; margin: 24px 0; }
+  blockquote { border-left: 4px solid #30363d; padding: 0 16px; color: #8b949e; margin: 16px 0; }
+  code { background: #161b22; padding: 2px 6px; border-radius: 6px; font-size: 0.875em; }
+  sup, sub { color: #8b949e; }
+  img { max-width: 100%; border-radius: 6px; }
+  ul { padding-left: 2em; }
+  li { margin: 4px 0; }
+  .badge { display: inline-block; margin: 2px; }
+  .missing-img { 
+    background: #161b22; 
+    border: 2px dashed #f85149; 
+    border-radius: 8px; 
+    padding: 40px 20px; 
+    text-align: center; 
+    color: #f85149; 
+    font-weight: 600;
+    margin: 8px 0;
+  }
+  .section { margin: 32px 0; }
+  .flex-center { display: flex; justify-content: center; align-items: center; gap: 16px; flex-wrap: wrap; }
+  .stats-row { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 16px 0; }
+  .stats-row img { height: 165px; }
+</style>
+</head>
+<body>
+
+<!-- BANNER -->
+<div style="text-align:center; margin-bottom: 24px;">
+  <img src="assets/banner-dark.svg" alt="Anuj Malviya — Full-stack engineer" width="100%">
+</div>
+
+<p>I build full-stack systems from primitives — and stay to fix what breaks in production.</p>
+
+<p>Every project I've shipped has taught me the same lesson from a different angle: the happy path is the easy part. A peer-to-peer interview platform, a finance dashboard, a notes app on Redis-backed rate limiting, even a throwaway quote generator against an API that allows five requests an hour — each one turned out to be about failure states. Reconnection, cold starts, race conditions, 429s.</p>
+
+<p>On MockHire I chose raw WebRTC over a paid SDK, then spent a week fixing offer collisions and ghost disconnects a managed service would have hidden. I'd make the same call again.</p>
+
+<hr>
+
+<!-- MOCKHIRE SHOWCASE -->
+<div class="flex-center" style="margin: 24px 0;">
+  <img src="assets/mockhire-room.png" alt="MockHire interview room — peer video, chat, and shared code editor" width="49%">
+  <img src="assets/p2p-dark.svg" alt="P2P Architecture" width="33%">
+</div>
+
+<p style="text-align:center; color:#8b949e;">
+  <b>MockHire</b> — peer-to-peer technical interviews.<br>
+  Media never touches my server. No Twilio, no Agora, no SDK.
+</p>
+
+<div class="flex-center">
+  <a href="https://mockhire-1xn2.onrender.com"><img src="https://img.shields.io/badge/Live_demo-E8A94E?style=flat-square" alt="Live demo"></a>
+  <a href="https://github.com/AnujMalviya2154/MockHire-Video-Interview-Platform"><img src="https://img.shields.io/badge/Source-30363D?style=flat-square" alt="Source"></a>
+</div>
+
+<br>
+
+<h3>Current focus</h3>
+<p>
+  <b>Building</b> — Production-grade full-stack applications with AI, real-time communication, and scalable architectures<br>
+  <b>Learning</b> — Cloud-native deployments, DevOps practices, scalable system design, and software architecture<br>
+  <b>Exploring</b> — Agentic AI systems, developer tooling, and building software that scales gracefully in production
+</p>
+
+<hr>
+
+<h3>Featured work</h3>
+
+<h4>01 · MockHire</h4>
+<p style="color:#8b949e; font-size:0.85em;">Self-hosted technical interview platform — P2P video, shared editor, structured feedback.</p>
+<ul>
+  <li>Media bypasses the server entirely. It relays only SDP and ICE, which makes calls <b>physically un-recordable by design</b> rather than un-recorded by policy.</li>
+  <li>Room codes are 128 bits from <code>crypto.randomBytes</code>, authorized server-side per socket against the DB, with an 8-hour expiry. A leaked URL still doesn't get you in.</li>
+  <li><b>52 integration tests</b> against a live server and a real database, covering IDOR, feedback privacy, socket authorization, and survival of a mid-flight DB outage.</li>
+  <li>Binds its port <em>before</em> connecting to Mongo, then returns <code>503</code> + <code>Retry-After</code> until ready. Cold starts don't drop traffic.</li>
+</ul>
+<p style="color:#8b949e; font-size:0.85em;">React · Socket.IO · WebRTC · Express · MongoDB · Tailwind</p>
+
+<br>
+
+<h4>02 · Fintrak</h4>
+
+<div style="position:relative;">
+  <img src="assets/fintrak-dashboard.png" alt="Fintrak analytics dashboard" style="width:42%; float:right; margin-left:16px;">
+  <p style="color:#8b949e; font-size:0.85em;">Personal finance dashboard — income and expense tracking with analytics and Excel export.</p>
+  <ul>
+    <li>Split deployment across Vercel and Render with CORS pinned to a single origin.</li>
+    <li>Monthly overview and category-distribution charts, savings-rate computation, dark and light themes.</li>
+  </ul>
+  <p style="color:#8b949e; font-size:0.85em;">React 19 · Recharts · Express · MongoDB · JWT</p>
+</div>
+
+<div style="clear:both;"></div>
+
+<br>
+
+<p style="color:#8b949e; font-size:0.85em;">Also here — <b>ThinkBoard</b>, a notes app with a Redis sliding-window limiter and a dedicated 429 state · <b>NeetCode-150</b>, ongoing DSA practice.</p>
+
+<h3>How I work</h3>
+
+<blockquote>
+  <b>Decisions get written down.</b><br>
+  Every milestone in MockHire has a decision record in <code>docs/decisions/</code>. Six months from now I can still explain why the server binds before it connects — and, more usefully, what I'd have to believe to change it.
+</blockquote>
+
+<blockquote>
+  <b>Bugs get instrumented, not guessed at.</b><br>
+  Instrument, reproduce, fix, document, then remove the instrumentation. Three separate WebRTC failures went through that loop — including one I introduced while fixing the previous one. No diagnostic logging survived into <code>main</code>.
+</blockquote>
+
+<blockquote>
+  <b>Security is a default, not a feature.</b><br>
+  JWTs in httpOnly cookies rather than localStorage. Token-version revocation so logging out actually invalidates. Roles re-read from the database on every request instead of trusted from a payload the client holds.
+</blockquote>
+
+<blockquote>
+  <b>Failure is the default case.</b><br>
+  Servers boot before their database is reachable. Peers refresh mid-call. Free-tier APIs cut you off at five requests an hour. I design for those first and treat the happy path as the special case.
+</blockquote>
+
+<hr>
+
+<h3>Stack</h3>
+<p>
+  <b>Core</b> — React · Node · Express · MongoDB · Socket.IO<br>
+  <b>Real-time</b> — WebRTC · WebSockets · Redis<br>
+  <b>Also</b> — Tailwind · Bootstrap · C++
+</p>
+
+<h3>Activity</h3>
+
+<div class="stats-row">
+  <img src="https://github-readme-stats.anuraghazra1.vercel.app/api?username=AnujMalviya2154&show_icons=true&include_all_commits=true&count_private=true&rank_icon=percentile&hide_border=true&bg_color=00000000&title_color=E8A94E&icon_color=E8A94E&text_color=768390" alt="GitHub stats" height="165">
+  <img src="https://streak-stats.demolab.com?user=AnujMalviya2154&hide_border=true&theme=transparent&ring=E8A94E&fire=E8A94E&currStreakLabel=E8A94E&sideLabels=768390&dates=768390&currStreakNum=768390&sideNums=768390&stroke=768390" alt="Contribution streak" height="165">
+</div>
+
+<div style="text-align:center; margin: 16px 0;">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AnujMalviya2154&bg_color=00000000&color=768390&line=E8A94E&point=E8A94E&area_color=E8A94E&area=true&hide_border=true" alt="Contribution activity" width="98%">
+</div>
+
+<hr>
+
+<h3>Contact</h3>
+<div class="flex-center">
+  <a href="https://www.linkedin.com/in/anujmalviya764/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/LinkedIn-30363D?style=flat-square" alt="LinkedIn"></a>
+  <a href="mailto:anujmalviya76434@gmail.com" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Email-30363D?style=flat-square" alt="Email"></a>
+</div>
+
+<p style="text-align:center; color:#8b949e; font-size:0.85em;">B.Tech CSE, VIT Bhopal · open to backend and full-stack roles</p>
+
+<br>
+
+<p style="text-align:center; color:#8b949e; font-style:italic; font-size:0.85em;">The bug you can't reproduce is the one you haven't instrumented yet.</p>
+
+</body>
+</html>
