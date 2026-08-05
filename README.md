@@ -119,7 +119,7 @@ On MockHire I chose raw WebRTC over a paid SDK, then spent a week fixing offer c
 
 <div class="stats-row">
   <img src="https://github-readme-stats.anuraghazra1.vercel.app/api?username=AnujMalviya2154&show_icons=true&include_all_commits=true&count_private=true&rank_icon=percentile&hide_border=true&bg_color=00000000&title_color=E8A94E&icon_color=E8A94E&text_color=768390" alt="GitHub stats" height="165">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=AnujMalviya2154&hide_border=true&theme=transparent&ring=E8A94E&fire=E8A94E&currStreakLabel=E8A94E&sideLabels=768390&dates=768390&currStreakNum=768390&sideNums=768390&stroke=768390" alt="Contribution streak" height="165">
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=AnujMalviya2154&hide_border=true&theme=transparent&ring=E8A94E&fire=E8A94E&currStreakLabel=E8A94E&sideLabels=768390&dates=768390&currStreakNum=768390&sideNums=768390&stroke=768390&v=2" alt="Contribution streak" height="165">
 </div>
 
 <div style="text-align:center; margin: 16px 0;">
