@@ -32,7 +32,7 @@ On MockHire I chose raw WebRTC over a paid SDK, then spent a week fixing offer c
 </p>
 
 <p align="center">
-  <a href="https://mockhire-1xn2.onrender.com"><img src="https://img.shields.io/badge/Live_demo-E8A94E?style=flat-square" alt="Live demo"></a>
+  <a href="https://mockhire-video-interview-platform.onrender.com/"><img src="https://img.shields.io/badge/Live_demo-E8A94E?style=flat-square" alt="Live demo"></a>
   &nbsp;
   <a href="https://github.com/AnujMalviya2154/MockHire-Video-Interview-Platform"><img src="https://img.shields.io/badge/Source-30363D?style=flat-square" alt="Source"></a>
 </p>
